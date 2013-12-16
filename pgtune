@@ -339,7 +339,7 @@ class PGSettings(object):
             
         # TODO Support handling versions other than 8.4
         # TODO Allow passing in platform bit size
-        setting_dump_file = os.path.join(self.settings_dir, "pg_settings-8.4-%s" % platform_bits)
+        setting_dump_file = os.path.join(self.settings_dir, "pg_settings-9.2-%s" % platform_bits)
         setting_columns = ["name", "setting", "unit", "category", "short_desc",
                           "extra_desc", "context", "vartype", "min_val", "max_val", "enumvals",
                           "boot_val"]
